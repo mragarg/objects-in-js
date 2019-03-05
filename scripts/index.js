@@ -7,7 +7,7 @@ const leetDictionary = {
     E: 3,
     G: 6,
     I: 1,
-    O: 0,
+    O: "0", // Put zero in quotes because it's falsey value
     S: 5,
     T: 7
 };
@@ -15,7 +15,16 @@ const leetDictionary = {
 function transl33t(originalString){
     let result = "";
 
-    
+    // loop through each letter in originalString and check leetDictionary
+    for(let i = 0; i < originalString.length; i++) {
+        let theLetter = originalString[i].toUpperCase();
+        if(leetDictionary[theLetter]) {
+            result += leetDictionary[theLetter];
+        }
+        else {
+            result += theLetter;
+        }
+    }
 
     return result;
 }
