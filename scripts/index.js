@@ -3,13 +3,13 @@ console.log("Hello");
 const leetDictionary = {
     // Keys are strings, just like in python
     // But in JS, quotes are optional 
-    A: 4,
-    E: 3,
-    G: 6,
-    I: 1,
+    E: "3",
+    G: "6",
+    A: "4",
+    I: "1",
     O: "0", // Put zero in quotes because it's falsey value
-    S: 5,
-    T: 7
+    S: "5",
+    T: "7"
 };
 
 function transl33t(originalString){
