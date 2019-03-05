@@ -1,20 +1,21 @@
 console.log("Hello");
 
-const leetDictionary = {
-    // Keys are strings, just like in python
-    // But in JS, quotes are optional 
-    E: "3",
-    G: "6",
-    A: "4",
-    I: "1",
-    O: "0", // Put zero in quotes because it's falsey value
-    S: "5",
-    T: "7"
-};
 
 function transl33t(originalString){
-    let result = "";
+    const leetDictionary = {
+        // Keys are strings, just like in python
+        // But in JS, quotes are optional 
+        E: "3",
+        G: "6",
+        A: "4",
+        I: "1",
+        O: "0", // Put zero in quotes because it's falsey value
+        S: "5",
+        T: "7"
+    };
 
+    let result = "";
+    
     // loop through each letter in originalString and check leetDictionary
     for(let i = 0; i < originalString.length; i++) {
         let theLetter = originalString[i].toUpperCase();
@@ -27,4 +28,8 @@ function transl33t(originalString){
     }
 
     return result;
+}
+
+const addressBook = {
+    
 }
